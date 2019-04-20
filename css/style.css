@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #485d6f;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+hr {
+	border-color: #E6E6E6;
+}
+
+header {
+	font-size: 2em;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+footer {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 0.75em;
+	color: grey;
+}
+
+.container {
+	height: 100vh;
+	position: relative;
+	font-family: 'IBM Plex Serif', serif;
+	color: #485d6f;
+}
+
+.navlink {
+	font-family: 'Courier', serif;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+.mainisi {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	color: rgb(87, 87, 87);
+	font-family: 'IBM Plex Serif', serif;
+}
+
+.inputtext {
+	width: 100%;
+	padding: 7px;
+	margin-top: 2px;
+	margin-bottom: 10px;
+}
+
+.hasilhitung {
+	width: 10%;
+	padding: 5px;
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+
+.tentang {
+	word-spacing: 2px;
+	letter-spacing: .00836rem;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kalkulator Instalasi Pengolahan Air untuk menghitung dosis kimia">
+    <meta name="keywords" content="pengolahan air minum, dosering, koagulan, dosis, air">
+	<title>Kalkulator Instalasai Pengolahan Air</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+	<body class="container">
+
+		<header>
+			<center>KALKULATOR INSTALASI PENGOLAHAN AIR</center>
+		</header>
+
+		<nav class="navlink">
+			<center>
+				<a href="#konsenkoagulan">Konsentrasi Koagulan</a>&nbsp;|&nbsp;
+				<a href="#jartest">Jar Test</a>&nbsp;|&nbsp;
+				<a href="#dosering">Dosering</a>&nbsp;|&nbsp;
+				<a href="#stroke">Stroke</a>&nbsp;|&nbsp;
+				<a href="#tentang">Tentang</a>
+			</center>
+		</nav>
+
+		<main class="mainisi">
+
+			<!-- Konsentrasi koagulan -->
+			<div id="konsenkoagulan">
+				<hr><br>
+				<h3>Konsentrasi Koagulan</h3>
+				<br>
+				<label for="massa">Massa Koagulan</label><br>
+				<input id="massa" class="inputtext" type="number" placeholder="kilogram" required><br>
+				<label for="vair">Volume Air</label><br>
+				<input id="vair" class="inputtext" type="number" placeholder="liter" required><br><br>
+				<button onclick="hitungKonsentrasi()">Hitung</button>
+				<br><br>
+				<b>Hasil : <input type="text" id="hCKoagulan" class="hasilhitung" disabled> %</b>
+			</div>
+
+			<!-- Jartest -->
+			<div id="jartest">
+				<br><br><hr><br>
+				<h3>Jar Test</h3>
+				<h4>Penentuan Volume Koagulan Untuk Jar Test</h4>
+				<br>
+				<label for="dosisingin">Dosis yang diinginkan</label><br>
+				<input id="dosisingin" class="inputtext" type="number" placeholder="miligram / liter" required><br>
+				<label for="beaker">Volume Air dalam Beaker Glass</label><br>
+				<input id="beaker" class="inputtext" type="number" placeholder="mililiter" required><br>
+				<label for="konsenjar">Konsentrasi Larutan Koagulan (C)</label><br>
+				<input id="konsenjar" class="inputtext" type="number" placeholder="%" required><br><br>
+				<button onclick="hitungJartest()">Hitung</button>
+				<br><br>
+				<b>Hasil : <input type="text" id="hJarTest" class="hasilhitung" disabled> ml</b>
+			</div>
+
+			<!-- Dosering -->
+			<div id="dosering">
+				<br><br><hr><br>
+				<h3>Dosering</h3>
+				<br>
+				<label for="debitipa">Debit IPA (Q)</label><br>
+				<input id="debitipa" class="inputtext" type="number" placeholder="liter / detik" required><br>
+				<label for="dosisop">Dosis Optimum (D)</label><br>
+				<input id="dosisop" class="inputtext" type="number" placeholder="miligram / liter" required><br>
+				<label for="konsentrasiForDosering">Konsentrasi Larutan Koagulan (C)</label><br>
+				<input id="konsentrasiForDosering" class="inputtext" type="number" placeholder="%" required><br><br>
+				<button onclick="hitungDosering()">Hitung</button>
+				<br><br>
+				<b>Hasil : <input type="text" id="hDosering" class="hasilhitung" disabled> ml/s</b>
+			</div>
+
+			<!-- Stroke -->
+			<div id="stroke">
+				<br><br><hr><br>
+				<h3>Stroke</h3>
+				<h4>Penentuan Stroke Untuk Pompa Dosing</h4>
+				<br>
+				<label for="qmax">Kapasitas Pompa Maksimum</label><br>
+				<input id="qmax" class="inputtext" type="number" placeholder="mililiter / menit" required><br>
+				<label for="jmlstroke">Jumlah Stroke</label><br>
+				<input id="jmlstroke" class="inputtext" type="number" placeholder="stroke" required><br>
+				<label for="doseringforstroke">Dosering</label><br>
+				<input id="doseringforstroke" class="inputtext" type="number" placeholder="mililiter / detik" required><br><br>
+				<button onclick="hitungStroke()">Hitung</button>
+				<br><br>
+				<b>Hasil : <input type="text" id="hStroke" class="hasilhitung" disabled></b>
+			</div>
+
+			<!-- Tentang -->
+			<div id="tentang">
+				<br><br><hr><br>
+				<h3>Tentang</h3>
+				<br>
+				<p class="tentang">Kalkulator yang diharapkan bisa membantu kawan-kawan yang bekerja di ranah pengolahan air minum. Daripada ngotrat-ngotret, kan pusing ya. Mending pake kalkulator aja, biar gampil dan menghemat waktu. Semoga bermanfaat.
+				<br><br>
+				Dari temanmu,<br>
+				<a href="https://anugrah.club/life">Anugrah</a></p>
+			</div>
+
+			<br><br><hr>
+
+		</main>
+		
+		<footer>
+			<center>
+				<a href="https://anugrah.club/lab"><i>anugrah.club</i> Laboratory</a> &copy; 2018 - present
+			</center>
+		</footer>
+	</body>
+
+	<script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="  crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</html>
