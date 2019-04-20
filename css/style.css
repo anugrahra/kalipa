@@ -76,3 +76,12 @@ footer {
 	font-size: 1.2rem;
 	line-height: 1.8rem;
 }
+
+/*kalau kecil*/
+@media screen and (max-width: 880px){
+
+	.mainisi {
+		width: 90%;
+	}
+
+}
