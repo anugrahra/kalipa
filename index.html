@@ -18,6 +18,7 @@
 			<center>
 				<a href="#konsenkoagulan">Konsentrasi Koagulan</a>&nbsp;|&nbsp;
 				<a href="#jartest">Jar Test</a>&nbsp;|&nbsp;
+				<a href="#vnotch">V-notch 90&deg;</a>&nbsp;|&nbsp;
 				<a href="#dosering">Dosering</a>&nbsp;|&nbsp;
 				<a href="#stroke">Stroke</a>&nbsp;|&nbsp;
 				<a href="#tentang">Tentang</a>
@@ -55,6 +56,19 @@
 				<button onclick="hitungJartest()">Hitung</button>
 				<br><br>
 				<b>Hasil : <input type="text" id="hJarTest" class="hasilhitung" disabled> ml</b>
+			</div>
+
+			<!-- V-notch 90 derajat -->
+			<div id="vnotch">
+				<br><br><hr><br>
+				<h3>V-notch 90&deg;</h3>
+				<h4>Penentuan Debit IPA dengan V-notch 90&deg;</h4>
+				<br>
+				<label for="hvnotch">Tinggi Muka Air</label><br>
+				<input id="hvnotch" class="inputtext" type="number" placeholder="cm" required><br><br>
+				<button onclick="hitungVnotch()">Hitung</button>
+				<br><br>
+				<b>Hasil : <input type="text" id="hasilVnotch" class="hasilhitung" disabled> l/s</b>
 			</div>
 
 			<!-- Dosering -->

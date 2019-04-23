@@ -19,6 +19,14 @@ function hitungJartest() {
 	document.getElementById("hJarTest").value = volumekoagulan;
 }
 
+function hitungVnotch() {
+	var hvnotch = document.getElementById("hvnotch").value;
+
+	var debitVnotch = 0.0134 * Math.pow( hvnotch, 5/2 );
+
+	document.getElementById("hasilVnotch").value = debitVnotch;
+}
+
 //Dosering
 function hitungDosering() {
 	var debitipa = document.getElementById("debitipa").value;
