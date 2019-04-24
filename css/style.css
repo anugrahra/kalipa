@@ -77,6 +77,16 @@ footer {
 	line-height: 1.8rem;
 }
 
+.gotop {
+	position: fixed;
+	bottom: 25px;
+	right: 100px;
+	padding: 1px;
+	border: 1px solid grey;
+	background-color: white;
+	font-size: 2em;
+}
+
 /*kalau kecil*/
 @media screen and (max-width: 880px){
 
@@ -86,6 +96,11 @@ footer {
 
 	.inputtext {
 		width: 90%;
+	}
+
+	.gotop {
+		bottom: 25px;
+		right: 10px;
 	}
 
 }
