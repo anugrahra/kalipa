@@ -19,12 +19,23 @@ function hitungJartest() {
 	document.getElementById("hJarTest").value = volumekoagulan;
 }
 
+//V-notch 90
 function hitungVnotch() {
 	var hvnotch = document.getElementById("hvnotch").value;
 
 	var debitVnotch = 1.39 * Math.pow( hvnotch, 5/2 );
 
 	document.getElementById("hasilVnotch").value = debitVnotch;
+}
+
+//Waktu Detensi
+function hitungTdetensi() {
+	var vkompartemen = document.getElementById("vkompartemen").value;
+	var debitipadetensi = document.getElementById("debitipadetensi").value;
+
+	var waktuDetensi = vkompartemen / debitipadetensi;
+
+	document.getElementById("hasilTdetensi").value = waktuDetensi;
 }
 
 //Dosering
