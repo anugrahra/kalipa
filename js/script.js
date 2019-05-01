@@ -22,7 +22,7 @@ function hitungJartest() {
 function hitungVnotch() {
 	var hvnotch = document.getElementById("hvnotch").value;
 
-	var debitVnotch = 0.0134 * Math.pow( hvnotch, 5/2 );
+	var debitVnotch = 1.39 * Math.pow( hvnotch, 5/2 );
 
 	document.getElementById("hasilVnotch").value = debitVnotch;
 }
